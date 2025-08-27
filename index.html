@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sorting Algorithm Comparison</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Sorting Visualizer: Bubble Sort vs. Merge Sort</h2>
+  <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+    <div>
+      <h3>Bubble Sort</h3>
+      <div id="bubble-array" class="array-container"></div>
+      <p><b>Time Complexity:</b> Average & Worst: O(n<sup>2</sup>), Best: O(n)</p>
+    </div>
+    <div>
+      <h3>Merge Sort</h3>
+      <div id="merge-array" class="array-container"></div>
+      <p><b>Time Complexity:</b> Average, Worst & Best: O(n log n)</p>
+    </div>
+  </div>
+  <div style="text-align:center; margin: 20px;">
+    <button onclick="generateArrays()">Generate New Arrays</button>
+    <button onclick="startSorts()">Start Sorting</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
